@@ -1,0 +1,215 @@
+/*内容部分*/
+/*top start*/
+.top{
+    text-align: center;
+    height: 620px;
+    background-color: rgb(47,50,58);
+    padding-top: 200px;
+}
+.top h3{
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+    /*font-family: Roboto;*/
+}
+.top h5{
+    color: rgb(255, 255, 255);
+    font-family: Roboto;
+    height: 80px;
+    line-height: 80px;
+    font-size: 16px;
+}
+.top a{
+    display: block;
+    width: 200px;
+    height: 70px;
+    line-height: 70px;
+    background-color: rgb(78,179,234);
+    margin: 10px auto;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    border-radius:5px;
+}
+.top a:hover{
+    opacity: 0.8;
+}
+/*top end*/
+/*三块效果start*/
+.three{
+    /*height: 200px;*/
+    /*background-color: #f02;*/
+}
+.three .left,.mid,.right{
+    width: 380px;
+    height: 780px;
+    background-color: #FFFFFF;
+    float: left;
+    position: relative;
+    text-align: center;
+    top: -300px;
+    /*border: 1px solid #000;*/
+    margin-bottom: -300px;
+    border-radius:20px 20px 10px 10px;
+    overflow: hidden;
+    box-shadow: 1px 0px 10px #000;
+}
+.three .left,.right{
+    height: 760px;
+    top: -280px;
+}
+.three .mid .most-popular{
+    background-color: rgb(78,179,234);
+    height: 40px;
+    width: 800px;
+    line-height: 40px;
+    font-size: 18px;
+    color: #FFFFFF;
+    transform:rotate(45deg);
+    position: absolute;
+    left: -70px;
+    top: 32px;
+}
+.three .left h3,.mid h3,.right h3{
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 60px;
+    color: #000;
+}
+.fw{
+    font-weight: 700;
+    color: #000;
+}
+.three .left li,.mid li,.right li{
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+}
+.three .left .firstli,.mid .firstli,.right .firstli{
+    font-size: 40px;
+    height: 80px;
+    line-height: 80px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+.three .left .firstli i,.mid .firstli i,.right .firstli i{
+    font-weight: 700;
+    color: #000;
+}
+.three .left .firstli span,.mid .firstli span,.right .firstli span{
+    font-size: 20px;
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    background-color: rgb(78,179,234);
+    border-radius:35px;
+    position: relative;
+    left: 20px;
+    top: -40px;
+}
+sup,sub{
+    /*font-size: 20px;*/
+}
+.clear{
+    clear: both;
+}
+/*三块效果end*/
+/*main start*/
+.content .dable{
+    width: 400px;
+}
+.one,.two,.content,.getlogin{
+    text-align: center;
+}
+.main h3{
+    font-size: 32px;
+    height: 80px;
+    line-height: 80px;
+    margin-top: 60px;
+    font-family: Roboto;
+    color: #000;
+}
+.main h3 span{
+    color: rgb(78,179,234);
+}
+.main .one h4{
+    margin-bottom: 20px;
+}
+.main h4{
+    font-size: 16px;
+    color: rgb(106, 106, 106);
+    height: 30px;
+    line-height: 30px;
+    font-family: Roboto;
+}
+.main .one div{
+    width: 350px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 42px;
+    margin: 30px auto 10px;
+    background: rgb(241, 241, 241);
+    font-family: Roboto;
+}
+.main .one p{
+    display: inline-block;
+    color: rgb(101,101,101);
+    font-weight: 700;
+}
+.main .one h5{
+    margin-top: 60px;
+}
+.main a{
+    display: inline-block;
+    width: 200px;
+    height: 70px;
+    line-height: 70px;
+    background-color: rgb(78,179,234);
+    color: #FFFFFF;
+    font-size: 18px;
+    margin-top: 40px;
+    border-radius:5px;
+}
+.main a:hover{
+    opacity:0.8
+}
+.dable dl{
+    margin-top: 40px;
+}
+.dable dt{
+    font-size: 20px;
+    text-align: left;
+    font-family: Roboto;
+    height: 35px;
+    line-height: 35px;
+    display: inline-block;
+    color: #000;
+    margin-bottom: 40px;
+}
+.dable dd{
+    font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    font-family: Roboto;
+    text-align: left;
+}
+.dable1{
+    /*position: relative;*/
+    margin-left: 80px;
+
+}
+.dable2{
+    /*position: relative;*/
+    margin-right:120px;
+}
+.getlogin{
+    margin-top: 140px;
+}
+#gotop a{
+    position: fixed;
+    right: 40px;
+    bottom: 100px;
+    font-size: 40px;
+    display: block;
+}
+/*main end*/

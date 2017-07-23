@@ -1,0 +1,601 @@
+/*awesome 部分start*/
+
+/*top*/
+.ya-main {
+
+}
+
+.ya-header {
+    height: 679px;
+    width: 100%;
+    overflow: hidden;
+    /*padding-top: 10%;*/
+    padding-left: 0;
+    background-color: #ffffff;
+    background-position: center bottom;
+    background-image: url(../images/1448929186700_56.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav-con {
+    height: 115px;
+    line-height: 115px;
+    position: relative;
+}
+
+.ya-nav h1 {
+    height: 55px;
+}
+
+.ya-nav h1 a {
+    display: block;
+    width: 179px;
+    height: 55px;
+}
+
+.top-con {
+    height: 552px;
+}
+
+.top-con {
+    /*background-color: papayawhip;*/
+}
+
+.con-center {
+    width: 879px;
+    height: 552px;
+    margin: 0 auto;
+}
+
+.title {
+    height: 63px;
+    padding-top: 20px;
+}
+
+.title h1 {
+    font-size: 60px;
+    text-align: center;
+    line-height: 1;
+}
+
+.title p {
+    margin-top: 10px;
+    line-height: 1.6;
+    font-size: 14px;
+    color: rgb(137, 137, 137);
+}
+
+.comput {
+    height: 402px;
+    padding-top: 26px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.hide {
+    display: none;
+}
+
+.comput-con {
+    height: 402px;
+    width: 440px;
+    position: absolute;
+    left: 1500px;
+    display: block;
+}
+
+.comput-con a {
+    display: block;
+    height: 402px;
+    width: 440px;
+}
+
+.comput-con a img {
+    width: 440px;
+    height: 402px;
+}
+
+/**/
+/*simply部分开始*/
+.ya-simply {
+    height: 204px;
+}
+
+.simply-con {
+    width: 660px;
+    height: 204px;
+    margin: 0 auto;
+}
+
+.simply-top {
+    height: 70px;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
+.simply-top h2 {
+    height: 60px;
+    padding: 5px 0;
+    text-align: center;
+    line-height: 1.2;
+    font-size: 40px;
+    font-family: Roboto;
+}
+
+.simply-mid {
+    height: 55px;
+    line-height: 1.6;
+}
+
+.simply-mid p {
+    margin: 0 auto;
+    width: 536px;
+    font-size: 15px;
+    color: rgb(137, 137, 137);
+}
+
+.simply-bot {
+    height: 40px;
+}
+
+.simply-bot span {
+    width: 30px;
+    height: 5px;
+    display: inline-block;
+    border-bottom: 2px solid #8dcbec;
+}
+
+/**/
+/*texcon部分开始*/
+.ya-text {
+    height: 162px;
+}
+
+.ya-texcon {
+    height: 162px;
+}
+
+.texcon-l {
+    width: 330px;
+}
+
+.texcon-c {
+    width: 440px;
+}
+
+.texcon-r {
+    width: 330px;
+}
+
+.icon-section {
+    height: 138px;
+}
+
+.icon {
+    display: block;
+    width: 50px;
+    height: 50px;
+    /*background:url("../images/icon1.png")*/
+}
+
+.icon-con {
+    width: 280px;
+    height: 138px;
+    /*background-color: #ccc;*/
+}
+
+.icon-con h3 {
+    line-height: 1;
+    font-size: 24px;
+    color: #3a3a3a;
+    font-family: Raleway;
+    color: rgb(137, 137, 137);
+}
+
+.icon-con p {
+    margin-top: 10px;
+    line-height: 1.7;
+    font-size: 13px;
+    color: rgb(137, 137, 137)
+}
+
+.icon-sectionA {
+    margin: 0 auto;
+    width: 330px;
+}
+
+/*texcon部分结束*/
+/*ya-wrap开始*/
+.ya-wrap {
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.ya-all {
+    width: 1200px;
+    height: 400px;
+    position: relative;
+}
+
+.ya-screen {
+    width: 1200px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.ya-screen li {
+    width: 1200px;
+    height: 400px;
+    overflow: hidden;
+    float: left;
+}
+
+.ya-screen ul {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 6000px;
+}
+
+.ya-all ol {
+    position: absolute;
+    left: 47%;
+    /*right: 10px;*/
+    bottom: 10px;
+    margin-left: -40px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.ya-all ol li {
+    float: left;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.ya-all ol li.current {
+    background: paleturquoise;
+}
+
+.arrow {
+    opacity: 0;
+    position: absolute;
+    top: 150px;
+    z-index: 1000;
+    width: 100%;
+}
+
+.prev, .next {
+    width: 76px;
+    height: 112px;
+    position: absolute;
+    z-index: 99;
+}
+
+.prev {
+    left: 0;
+    background: url(../images/prev.png) no-repeat;
+}
+
+.next {
+    right: 0;
+    background-image: url(../images/next.png);
+}
+
+/*ya-wrap结束*/
+/*ya-bulid开始*/
+.ya-bulid {
+    height: 476px;
+    padding-top: 36px;
+
+}
+
+.bulid-con {
+
+    height: 476px;
+}
+
+.b-colum {
+    height: 476px;
+    width: 50%;
+
+}
+
+.bulid-top {
+    height: 64px;
+    line-height: 64px;
+}
+
+.bud-ico {
+    width: 35px;
+    height: 37px;
+}
+
+.bcolum-tit {
+    height: 60px;
+}
+
+.bcolum-tit p {
+    line-height: 1.4;
+    font-size: 36px;
+    font-family: Raleway;
+    color: rgb(62, 62, 62);
+}
+
+.bcon {
+    height: 126px;
+}
+
+.bcon p {
+    margin-top: 20px;
+    font-size: 15px;
+    width: 460px;
+    line-height: 1.8;
+    font-family: Raleway;
+    color: rgb(137, 137, 137);
+}
+
+.bsup {
+    height: 85px;
+}
+
+.bsup p {
+    height: 58px;
+    line-height: 1.6;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(141, 203, 236);
+    font-family: Raleway;
+}
+
+.b-pic {
+
+    width: 50%;
+    height: 476px;
+}
+
+.b-pic .bpicon {
+    height: 411px;
+    width: 550px;
+}
+
+.bpicon a {
+    display: block;
+    /*  width: 550px;
+      height: 411px;*/
+}
+
+.bpicon a img {
+    width: 550px;
+    height: 411px;
+}
+
+/*ya-bulid结束*/
+
+/*ya-girl部分开始*/
+.ya-girl {
+    height: 700px;
+    background: url("../images/blue-pic.jpg");
+}
+
+.gril {
+    height: 700px;
+    overflow: hidden;
+}
+
+.gril p {
+    margin-top: 20px;
+    height: 82px;
+    line-height: 82px;
+    text-align: center;
+    line-height: 1.2;
+    font-family: Raleway;
+    font-size: 60px;
+    color: rgb(62, 62, 62);
+}
+
+.img {
+    float: left;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50px;
+    margin: 50px 30px 0;
+}
+
+.img .inner {
+    position: relative;
+}
+
+.img .inner div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+}
+
+.img .inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.img .inner div:last-child {
+    opacity: 0;
+}
+
+/*ya-girl部分结束*/
+/*.ya-caves开始*/
+.ya-caves {
+    height: 400px;
+
+}
+
+.ya-caves {
+    height: 400px;
+}
+
+.cavs {
+    width: 1300px;
+    height: 400px;
+}
+
+.cav {
+    width: 400px;
+}
+
+canvas {
+    margin: -60px 0;
+}
+
+.sheep {
+    width: 900px;
+    height: 400px;
+    position: relative;
+}
+
+.smally {
+    width: 430px;
+    height: 350px;
+    position: absolute;
+    left: 470px;
+    top: 0;
+    background: url("../images/smallY.jpg");
+}
+
+/*.ya-caves结束*/
+/*ya-reserve部分开始*/
+.ya-reserve {
+    height: 600px;
+    overflow: hidden;
+    background: url("../images/bg-reverse.jpg");
+}
+
+.ya-reserve .reserve img {
+    display: block;
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.xwcms {
+    margin: 0 auto;
+   /* -webkit-border-radius: 110px;
+    border-radius: 110px;*/
+    -webkit-transition: -webkit-transform 3s ease-out;
+    -moz-transition: -moz-transform 3s ease-out;
+    -o-transition: -o-transform 3s ease-out;
+    -ms-transition: -ms-transform 3s ease-out;
+}
+
+.xwcms:hover {
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+}
+
+/*ya-reserve部分结束*/
+/*ya-about部分开始*/
+.ya-about {
+    height: 198px;
+}
+
+.about {
+    height: 198px;
+    text-align: center;
+}
+
+.about-con {
+    width: 550px;
+    height: 198px;
+    margin: 0 auto;
+}
+
+.about-con p {
+    height: 84px;
+    line-height: 1.4;
+    font-size: 50px;
+    font-family: Raleway;
+}
+
+.about-con p.cons {
+    font-size: 14px;
+    height: 54px;
+    color: rgb(137, 137, 137);
+    line-height: 22.4px;
+    font-family: Raleway;
+}
+
+/*ya-about部分结束*/
+/*ya-team部分开始*/
+.ya-team {
+
+}
+
+.team {
+    height:598px;
+}
+
+.team ul {
+    width: 1100px;
+    overflow: hidden;
+}
+
+.team li {
+    float: left;
+    width: 20%;
+    height: 258px;
+
+}
+
+.team .item1 {
+    height: 127px;
+    padding-top: 22px;
+    /*background-color: paleturquoise;*/
+
+}
+
+.team .item1 a {
+    display: block;
+    margin: 0 auto;
+    width: 127px;
+    height: 127px;
+}
+
+.item1 a img {
+    width: 127px;
+    height: 127px;
+}
+
+.team .item2 {
+    font-size: 14px;
+    font-weight: bold;
+    height: 43px;
+    line-height: 43px;
+    /*background-color: palegreen;*/
+}
+
+.team .item3 .item4 {
+    height: 32px;
+    font-size: 13px;
+
+    line-height: 32px;
+    background-color: plum;
+}
+.team .item3{
+    color:rgb(204, 204, 204);
+}
+.team .item4{
+  color: rgb(137, 137, 137);
+}
+/*ya-team部分结束*/

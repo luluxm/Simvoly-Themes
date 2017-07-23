@@ -1,0 +1,409 @@
+/*顶部头部*/
+.navigation {
+    height: 98px;
+}
+
+.l-navigation {
+    float: left;
+    margin-left: 6%;
+    font: 700 36px/98px Courgette;
+}
+
+.l-navigation a {
+    color: rgb(36, 36, 36);
+}
+
+.r-navigation {
+    float: right;
+    margin-right: 5%;
+    vertical-align: middle
+}
+
+.r-navigation li {
+    float: left;
+    font: 16px Courgette;
+}
+
+.r-navigation li a {
+    display: block;
+    padding: 20px 15px;
+    line-height: 68px;
+    color: #3E3E3E;
+}
+
+.r-navigation li .active{
+    color:#8DCBEE;
+}
+
+
+/*广告开始*/
+.ban {
+    width: 100%;
+    height: 450px;
+    background: url("../images/big71.jpg") center center no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.ban .w {
+    text-align: center;
+}
+
+
+.ban .d1 {
+    /*background-color : #fff;*/
+    width: 500px;
+    height: 164px;
+}
+
+.ban .h3 {
+    /*background-color: hotpink;*/
+    /*text-align: center;*/
+    /*margin: 0 auto;*/
+    position: relative;
+}
+
+.ban .h3 h3 {
+    font: 400 64px Courgette;
+    color: #FFFFFF;
+    display: table-cell;
+    vertical-align: middle;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    opacity: 0;
+}
+
+/*小文字*/
+.ban .p {
+    margin-top: 100px;
+    position: relative;
+}
+.ban .p p{
+    /*font: 400 18px Courgette;*/
+    font: 16px 'Roboto Slab';
+    color: #FFFFFF;
+    position: absolute;
+    left: 100%;
+    opacity: 0;
+}
+
+
+/*情侣*/
+.grid-content {
+    margin-top: 40px;
+}
+
+.gelef {
+    float: left;
+    width: 39.9818%;
+}
+
+.grid-content .gelefttop img {
+   cursor: pointer;
+}
+
+.grid-content .gelefmid {
+    /*width: 39.9818%;*/
+    text-align: center;
+    margin-top: 3%;
+ }
+
+.grid-content .gelefmid h3{
+    font: 42px Courgette;
+    color: #666666;
+}
+
+.grid-content .gelefbot {
+    width: 80%;
+    text-align: center;
+    margin-left: 3%;
+    margin-top: 1%;
+}
+
+.grid-content .gelefbot p{
+    font: 14px/24px 'Roboto Slab';
+    color: #898989;
+    cursor: pointer;
+    padding-bottom: 20%;
+}
+
+
+/*中间and*/
+.grcet {
+    padding-top: 23%;
+    float: left;
+    width: 19.5%;
+}
+
+.grcet .p1{
+    text-align: center;
+}
+
+.grcet .p1 p {
+    font: 42px Courgette;
+    color: #8DCBEC;
+}
+
+
+/*图片和文字*/
+.cimg {
+    height: 370px;
+    background: url("../images/big78.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.wenimg {
+    text-align: center;
+}
+
+.wenimg p {
+    font: 60px/370px Courgette;
+    color: #FFFFFF;
+}
+
+/*假视频跳转*/
+.vido {
+    width: 100%;
+    background-color: #F5F5F5;
+    /*padding-bottom: 70px;*/
+}
+
+.levido {
+    float: left;
+}
+
+/*右侧文字*/
+.rigvido {
+    float: left;
+}
+
+.rigvido .h3 {
+    margin-top: 80px;
+    margin-left: 154px;
+}
+
+.rigvido .h3 h3{
+    font: 42px Courgette;
+    color: #3E3E3E;
+}
+
+.rigvido .p {
+    width: 480px;
+    margin-top: 22px;
+    margin-left: 120px;
+}
+
+.rigvido .p p{
+    font: 16px/24px 'Roboto Slab';
+    color: #898989;
+    cursor: pointer;
+}
+
+.rigvido .but {
+    margin-top: 40px;
+    margin-left: 120px;
+}
+
+.rigvido .but a{
+    display: block;
+    width: 142px;
+    height: 54px;
+    background-color: #8DCBEC;
+    text-align: center;
+    /*line-height: 54px;*/
+    font: 400 14px/54px 'Roboto Slab';
+    color: #FFFFFF;
+    border-radius: 8px;
+    transition: all 1s;
+}
+
+.rigvido .but a:hover{
+    border-radius: 8px;
+    font: 400 14px/60px 'Roboto Slab';
+    width: 150px;
+    height: 60px;
+}
+
+
+
+/*图片*/
+.wrap {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.wrap h3{
+    font: 60px Courgette;
+    color: #3E3E3E;
+}
+
+
+/*旋转木马*/
+.wrap{
+    /*margin: 100px auto;*/
+    position: relative;
+}
+
+.slide{
+    width: 1090px;
+    padding-bottom: 50px;
+    height: 300px;
+}
+
+.slide  li{
+    position: absolute;
+    left: 330px;
+    top: 150px;
+}
+.slide li img {
+    width: 100%;
+}
+
+.arrow {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    z-index: 1000;
+    width: 100%;
+}
+
+.prev, .next {
+    width: 76px;
+    height: 112px;
+    position: absolute;
+    z-index: 99;
+}
+
+.prev {
+    left: 0;
+    background: url(../images/prev.png) no-repeat;
+}
+
+.next {
+    right: 0;
+    background-image: url(../images/next.png);
+}
+
+
+
+/*时间*/
+.toptime {
+    padding-top:120px;
+    text-align: center;
+}
+
+.toptime h4{
+    font: 24px 'Roboto Slab';
+    color: #898989;
+}
+
+.midtime{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.midtime h3 {
+    font: 72px/93px Courgette;
+    color: #444444;
+    cursor: pointer;
+}
+
+.centtime {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.centtime .cenli {
+    margin-left: 50%;
+    width: 20px;
+    border-bottom: 2px solid #8DCBEC;
+}
+
+.fottime {
+    text-align: center;
+}
+
+.fottime p {
+    margin-top: 26px;
+    margin-left: 26%;
+    width: 532px;
+    font: 14px/22px 'Roboto Slab';
+    color: #898997;
+    cursor: pointer;
+}
+
+/*花花*/
+.flowers {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/*时间结尾*/
+.toptimerover{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.toptimerover h3 {
+    font: 42px Courgette;
+    color: #444444;
+    cursor: pointer;
+}
+
+.centtimerover {
+    text-align: center;
+    margin-top: 28px;
+}
+
+.centtimerover h4 {
+    font: 18px 'Roboto Slab';
+    color: #444444;
+    cursor: pointer;
+}
+
+.foottimerover {
+    margin-top: 38px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.foottimerover p{
+    font: 16px 'Roboto Slab';
+    color: #898997;
+    cursor: pointer;
+}
+
+
+
+/*结尾*/
+.foot {
+    background-color: #F5F5F5;
+}
+.foot .topfoot{
+    padding-top: 90px;
+}
+.foot .topfoot h4{
+    font: 16px simsun;
+    color: #898989;
+}
+
+.foot .centfoot {
+    padding-top: 6px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.foot .centfoot p{
+    font: 36px Courgette;
+    color: #444444;
+}
+
+
+
+
+
+
+
+

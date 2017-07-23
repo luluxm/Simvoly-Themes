@@ -1,0 +1,152 @@
+/*
+ * Copyright (c) 2015, Simvoly All Rights Reserved.
+ *  Author Ivan Nikolchov
+ */
+
+/* global ClientTools, dummy */
+
+function showSimpleLoadingBar(container, callback) {
+  var cont = $('<div class="loadingBarContainer"></div>');
+  container.append(cont);
+  cont.append('<div class="loadingBarOverlay"></div><div class="loadingBarContent"></div>');
+  //cont.fadeIn('fast', callback || function() { });
+  cont.show();
+  if (callback)
+    callback();
+}
+
+function hideSimpleLoadingBar(container) {
+  var cont = container.find('.loadingBarContainer');
+  cont.fadeOut('fast', function () {
+    cont.remove();
+    cont = null;
+  });
+}
+
+function setupThemesDemo() {
+  if ($('#themeOverlay').length > 0)
+    return;
+  var overlayMarkup =
+    '<div class="themes-overlay" id="themeOverlay" style="display: none;"> \
+      <a href="javascript: void(0)" class="close-btn close-popup"></a>\
+      <div class="overlay-content theme-preview">\
+        <section>\
+          <div class="current-theme">\
+            <div class="button-wrapper">\
+              <a href="/Register" class="templateChooserBtn middle-button theme-select-blue">Use this theme</a>\
+              <div class="viewport-buttons">\
+                <ul>\
+                  <li>\
+                    <a href="javascript: void(0)" class="button-tooltip active" data-size="desktop" data-tooltip="desktopView" data-original-title="" title=""><i class="fa fa-desktop"></i></a>\
+                  </li>\
+                  <li>\
+                    <a href="javascript: void(0)" class="button-tooltip" data-size="tablet" data-tooltip="tabletView" data-original-title="" title=""><i class="fa fa-tablet"></i></a>\
+                  </li>\
+                  <li>\
+                    <a href="javascript: void(0)" class="button-tooltip" data-size="mobile" data-tooltip="phoneView" data-original-title="" title=""><i class="fa fa-mobile"></i></a>\
+                  </li>\
+                </ul>\
+              </div>\
+            </div>\
+            <div class="iframe-content desktop-preview">\
+              <div class="iframe">\
+                <iframe src="javascript: void(0)"></iframe>\
+              </div>\
+            </div>\
+          </div>\
+        </section>\
+      </div>\
+    </div>';
+  $(document.body).append(overlayMarkup);
+
+  var overlay = $('#themeOverlay');
+  var iframe = overlay.find('iframe');
+
+  overlay.find('.close-popup').click(function () {
+    overlay.fadeOut('fast', function () {
+      overlay.find('iframe').attr('src', 'javascript: var s = ' + ClientTools.tick() + ';');
+    });
+  });
+
+  overlay.find('.fa-tablet, .fa-desktop, .fa-mobile').click(function () {
+    var $this = $(this);
+    var cls = $this.hasClass('fa-tablet') ? 'fa-tablet' : $this.hasClass('fa-desktop') ? 'fa-desktop' : 'fa-mobile';
+    var btns = overlay.find('.viewport-buttons');
+    btns.find('.active').removeClass('active');
+    $this.parent().addClass('active');
+    overlay.removeClass('fa-tablet fa-mobile fa-desktop').addClass(cls);
+    var iframe = overlay.find('iframe');
+    showSimpleLoadingBar(iframe.parent(), function () {
+      iframe.attr('src', iframe.attr('src') + '1');
+    });
+  });
+
+  $('[data-action="showDemo"]').click(function () {
+    var theme = $(this).closest('.active-theme');
+    var url = theme.data('url');
+    var themeName = theme.data('name');
+    overlay.find('.templateChooserBtn').attr('href', '/Register?template=' + themeName);
+    showSimpleLoadingBar(iframe.parent(), function () {
+      overlay.removeClass('fa-tablet fa-mobile').addClass('fa-desktop').fadeIn('fast');
+      var iframeParent = iframe.parent();
+      iframe.remove();
+      iframe = $('<iframe src="' + '//' + url + '?v=' + ClientTools.tick() + '"></iframe>');
+      iframe.load(function () {
+        hideSimpleLoadingBar(iframe.parent());
+      });
+      iframeParent.append(iframe);
+    });
+  });
+}
+/*
+function setupPromoForm() {
+  var launchPromotionDismissed = $.cookie('launchPromotion') === 'no';
+
+  if (!launchPromotionDismissed && (windowWidth >= 769)) {
+    var modals = $('#launchPromo').find('.promo-modal');
+
+    modals.find('.close-button').click(function () {
+      $.cookie('launchPromotion', 'no', {expires: 10 * 365, path: '/'});
+      modals.removeClass('visible-step');
+      return false;
+    });
+
+    var step1 = modals.filter('[data-step="1"]').addClass('visible-step');
+    var step2 = modals.filter('[data-step="2"]');
+    var step3 = modals.filter('[data-step="3"]');
+    step1.find('.next').click(function () {
+      step1.removeClass('visible-step');
+      step2.addClass('visible-step');
+      step2.find('.next').click(function () {
+        var email = step2.find('input[name="email"]').val();
+        var description = step2.find('textarea[name="description"]').val();
+        var formId = step2.find('input[name="formid"]').val();
+
+        ClientTools.makeWebsiteRequest({
+          action: 'submitForm',
+          method: 'post',
+          data: {
+            values: [email, description],
+            form: formId
+          },
+          onOk: function () {
+            step2.removeClass('visible-step');
+            step3.addClass('visible-step');
+            $.cookie('launchPromotion', 'no', {expires: 10 * 365, path: '/'});
+          }
+        });
+      });
+    });
+  }
+}
+*/
+ClientTools.onDocumentReady(function () {
+  $('a[href="/live-chat"]').click(function (e) {
+    e.stopPropagation();
+    window.open('https://simvoly.com/live-chat', 'Simvoly Customer Service', 'height=450,width=505,left=0,top=10');
+    return false;
+  });
+
+  //ClientTools.delay(2000, setupPromoForm);
+});
+

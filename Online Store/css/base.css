@@ -1,0 +1,210 @@
+/*
+* @Author: dhl
+* @Date:   2016-11-26 16:57:00
+* @Last Modified by:   dhl
+* @Last Modified time: 2016-11-26 17:43:51
+*/
+
+/* CSS初始化 */
+body,h1,h2,h3,h4,h5,h6,ul,ol,dl,dt,dd,li,p {
+	 margin: 0;
+	 padding: 0;
+	 list-style: none;
+	 font-size: 12px;
+	 font-family: "宋体";
+	 color: #000;
+}
+
+a {
+	
+	color: #000;
+	text-decoration: none;
+}
+
+input,img {
+	 margin: 0;
+	 padding: 0;
+	 border: 0 none;
+	 outline-style: none;
+	 vertical-align: bottom;
+}
+
+
+.clearfix:after {
+	 content: "";
+	 height: 0;
+	 line-height: 0;
+	 display: block;
+	 clear: both;
+	 visibility: hidden;
+}
+
+.clearfix {
+	 zoom: 1;
+}
+
+/* 版心 */
+.w {
+
+	 width: 1280px;
+	 margin: 0 auto;
+
+}
+
+
+/*gcontent*/
+#gcontent {
+	position: relative;
+}
+
+/*headerstart*/
+#header {
+	height: 100px;
+	width: 100%;
+}
+
+#header .content a {
+	float: left;
+}
+
+#header .content a img {
+	/*float: left;*/
+	margin-top: 35px;
+}
+
+#header .content ul {
+	float: right;
+}
+
+#header .content ul li {
+	float: left;
+	margin-top: 35px;
+}
+
+#header .content ul li a {
+	display: inline-block;
+	padding: 10px 20px;
+	border: 2px solid transparent;
+	font: 14px 'Open Sans';
+	color: #444444;
+}
+
+#header .content ul li a:hover {
+	border: 2px solid #000;
+	color: #1c1c1c;
+}
+
+#header #iconfont:hover {
+	border: 2px solid transparent;
+}
+
+body, html {
+	height: 100%;
+}
+
+#slide {
+	height: 100%;
+	width: 235px;
+	background-color: #2f323a;
+	position: absolute;
+	top: 0;
+	right: -260px;
+	padding: 50px 0 0 25px;
+	display: none;
+}
+
+#slide img {
+	margin-bottom: 22px;
+	padding-left: 15px;
+}
+
+#slide ul s {
+	display: inline-block;
+	height: 20px;
+}
+
+#slide ul li a {
+	color: #fff;
+	line-height: 38px;
+	padding-left: 15px;
+	font-family: 'Open Sans';
+}
+
+#slide ul li.li-last {
+	background-color: #4eb3ea;
+}
+
+#slide ul .li-last a {
+	color: #fff;
+}
+
+#slide ul li a:hover {
+	color: #4eb3ea;
+}
+
+#slide ul .li-last a:hover {
+	color: #fff;
+}
+
+.headerfixed{
+	position: fixed;
+	top: 0;
+}
+/*图标字体*/
+@font-face {
+	font-family: 'iconfont';
+	src: url('font/iconfont.eot');
+	src: url('font/iconfont.eot?#iefix') format('embedded-opentype'),
+	url('font/iconfont.woff') format('woff'),
+	url('font/iconfont.ttf') format('truetype'),
+	url('font/iconfont.svg#iconfont') format('svg');
+}
+
+#iconfont {
+	font-family: "iconfont" !important;
+	font-size: 16px;
+	font-weight: 700;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-stroke-width: 0.2px;
+	-moz-osx-font-smoothing: grayscale;
+}
+/*图标字体*/
+
+/*headerend*/
+.main{
+	height: 5000px;
+}
+/*foot start*/
+
+.foot {
+	height: 340px;
+	padding-top: 76px;
+	background-color: rgb(245, 245, 245);
+}
+
+.foot .w .fl {
+	width: 300px;
+	float: left;
+}
+
+.foot .w .fl dt {
+	margin-bottom: 40px;
+	font: 700 18px 'Open Sans';
+	color: #444444;
+}
+
+.foot .w .fl dd a {
+	display: inline-block;
+	height: 26px;
+	line-height: 26px;
+	font: 14px 'Open Sans';
+	color: #6A6A6A;
+}
+
+.foot .w .fl dd a:hover {
+	color: #4eb3ea;
+}
+
+/*foot end*/
+
+

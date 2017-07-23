@@ -1,0 +1,290 @@
+/*body*/
+*{
+    margin: 0;
+    top: 0;
+}
+a {
+    text-decoration: none;
+    color: #bbb;
+}
+a:hover{
+    color: #FFFFFF;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+ul, ol {
+    list-style: none;
+}
+
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+body{
+    background-color: rgb(47,50,58);
+    width: 100%;
+    height: 100%;
+}
+/*body*/
+
+/*头部start*/
+.w{
+    width: 1400px;
+    height: 1000px;
+    /*background-color: #f02;*/
+    margin: 100px auto;
+}
+.head{
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    /*display: block;*/
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(47,50,58);
+}
+.head a{
+    font-size: 24px;
+    display: inline-block;
+    width: 25px;
+    /*margin-right: 15px;*/
+}
+.head .USE{
+    margin-top: 20px;
+    margin-right: 10px;
+    display: inline-block;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    color: #FFFFFF;
+    font-size: 18px;
+    background-color: rgb(78,179,234);
+}
+.head .computer{
+    color: #FFFFFF;
+}
+.head .pad{
+    font-size: 20px;
+}
+.head .mob{
+    font-size: 18px;
+}
+.head .close{
+    font-size: 40px;
+    margin-right: 50px;
+}
+.main{
+    overflow: auto;
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+    color: #FFFFFF;
+}
+body .main .bgi{
+    width: 100%;
+    height: 800px;
+    background: url("../Images/topBGC.jpg") center center no-repeat;
+    background-size: cover;
+    padding-top: 40px;
+}
+.main .bgi a{
+    font-size: 22px;
+    font-family: "Fjalla One";
+    color: #FFFFFF;
+}
+.main .bgi .icon{
+    position: absolute;
+    left: 60px;
+    top: 40px;
+}
+.main .bgi .mid{
+    margin-top: 300px;
+    margin-bottom: 160px;
+}
+.main .bgi .mid span{
+    color: #FFFFFF;
+}
+.main .bgi p{
+    font-size: 16px;
+    color: rgb(204, 204, 204);
+    font-family: "Fjalla One";
+}
+.main .bgi h3{
+    color: rgb(204, 204, 204);
+    font-family: "Fjalla One";
+    font-size: 60px;
+}
+.showpic{
+    height: 650px;
+    background-color: #fff;
+    padding-top: 40px;
+    position: relative;
+}
+#pics{
+    margin-left: 60px;
+}
+#pics .lipic{
+    display: block;
+    float: left;
+    width: 400px;
+    height: 300px;
+    /*background: url("../Images/1.jpg")no-repeat;*/
+}
+#pics .lipic .mask{
+    background-color: #000000;
+    opacity: 0;
+    height: 100%;
+    overflow: hidden;
+}
+#pics .lipic p{
+    margin-top: 60px;
+    font-family: "Fjalla One";
+    font-size: 18px;
+    font-weight: 700;
+}
+#pics .lipic span a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: rgb(209,209,155);
+    color: #FFFFFF;
+    margin-right: 10px;
+}
+.none{
+    display: none;
+}
+.showbigpic{
+    width: 1000px;
+    height: 800px;
+    position: absolute;
+    left: 160px;
+    top: 60px;
+    /*text-align: center;*/
+    /*display: none;*/
+}
+.bigmask{
+    background-color: #000;
+    opacity:0.7;
+    width: 1400px;
+    height: 1000px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+}
+.closepic{
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    color: #FFFFFF;
+    font-size: 22px;
+}
+.turnR,.turnL{
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #666;
+    right: 100px;
+    top: 400px;
+    font-size: 22px;
+    font-weight: 700;
+}
+.turnL{
+    left: 100px;
+}
+.link,.footercontent{
+    color: #000;
+}
+.VIEWALL a{
+    display: block;
+    width: 180px;
+    height: 70px;
+    line-height:70px;
+    color: #FFFFFF;
+    margin: 20px auto;
+    background-color: rgb(0, 0, 0);
+    border-radius:3px;
+}
+.link{
+    margin-top: 100px;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.footercontent{
+    font-family: "Fjalla One";
+    font-weight: 700;
+    margin-bottom: 100px;
+}
+
+#sidnav{
+    width: 200px;
+    height: 100%;
+    background-color: rgb(47,50,58);
+    /*display: none;*/
+    opacity:0;
+    position: absolute;
+    left: 0px;
+    top: 101px;
+}
+#sidnav a{
+    color: #FFFFFF;
+    text-align: center;
+}
+#sidnav a:hover{
+    color: rgb(78, 179, 234);
+}
+#sidnav ul li{
+    margin-bottom: 20px;
+}
+.navlogo{
+    display: block;
+    background: url(../Images/logo-blue.png)no-repeat;
+    height: 27px;
+    margin-left: 40px;
+    margin-top: 40px;
+    text-indent: -99999px;
+}
+.navtop{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.navbottom{
+    margin-bottom: 40px;
+}
+.STARTED{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    background-color:rgb(78,179,234);
+}
+#sidnav a.STARTED:hover{
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+/*头部end*/

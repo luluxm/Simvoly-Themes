@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #demo {
+            width: 190px;
+            height: 190px;
+            background: url("zensh-oclock.jpg") 0 -2280PX no-repeat;
+            margin: 100px auto;
+        }
+    </style>
+</head>
+<body>
+<div id="demo"></div>
+<script src="../js/common.js"></script>
+<script>
+    var demo = document.getElementById("demo");
+    function yaotou(obj) {
+        document.onmousemove = function () {
+            var event = event || window.event;
+            var pageX = event.pageX || event.clientX + document.documentElement.scrollLeft;
+            var pageY = event.pageY || event.clientY + document.documentElement.scrollTop;
+            var x = (pageX - obj.offsetLeft - obj.offsetWidth / 2);
+            var y = (pageY - obj.offsetTop - obj.offsetHeight / 2);
+            var a = y / x;
+            var deg = Math.atan(a) * 180 / Math.PI;
+            // 水平 (0,0)
+            if (x > 0 && deg < 15 && deg > -15) {
+                obj.style.backgroundPositionX = 0;
+                obj.style.backgroundPositionY = 0;
+            }
+            if (x < 0 && deg < 15 && deg > -15) {
+                obj.style.backgroundPositionX = 0;
+                obj.style.backgroundPositionY = -6 * 190 + "px";
+            }
+            // 右上1 (0,-190*11)
+            if (x > 0 && deg > -45 && deg < -15) {
+                obj.style.backgroundPositionX = 0;
+                obj.style.backgroundPositionY = -190 * 11 + "px";
+            }
+            if (x < 0 && deg > -45 && deg < -15) {
+                obj.style.backgroundPositionX = 0;
+                obj.style.backgroundPositionY = -190 * 5 + "px";
+            }
+            // 右上2 (0,-190*10)
+            if (x > 0 && deg > -75 && deg < -45) {
+                obj.style.backgroundPositionX = 0;
+                obj.style.backgroundPositionY = -190 * 10 + "px";
+            }
+            if (x < 0 && deg > -75 && deg < -45) {
+                obj.style.backgroundPositionX = 0;
+                obj.style.backgroundPositionY = -190 * 4 + "px";
+            }
+            // 上 (0,-190*9)
+            if (x > 0 && deg > -90 && deg < -75) {
+                obj.style.backgroundPositionX = 0;
+                obj.style.backgroundPositionY = -190 * 9 + "px";
+            }
+            if (x < 0 && deg > 75 && deg < 90) {
+                obj.style.backgroundPositionX = 0;
+                obj.style.backgroundPositionY = -190 * 9 + "px";
+            }
+            // 左上2
+            if (x < 0 && deg > 45 && deg < 75) {
+                obj.style.backgroundPositionX = 0;
+                obj.style.backgroundPositionY = -190 * 8 + "px";
+            }
+            if (x > 0 && deg > 45 && deg < 75) {
+                obj.style.backgroundPositionX = 0;
+                obj.style.backgroundPositionY = -190 * 2 + "px";
+            }
+            // 左上1
+            if (x < 0 && deg > 15 && deg < 45) {
+                obj.style.backgroundPositionX = 0;
+                obj.style.backgroundPositionY = -190 * 7 + "px";
+            }
+            if (x > 0 && deg > 15 && deg < 45) {
+                obj.style.backgroundPositionX = 0;
+                obj.style.backgroundPositionY = -190 * 1 + "px";
+            }
+            // 下
+            if (x > 0 && deg > 75 && deg < 90) {
+                obj.style.backgroundPositionX = 0;
+                obj.style.backgroundPositionY = -190 * 3 + "px";
+            }
+            if (x < 0 && deg > -90 && deg < -75) {
+                obj.style.backgroundPositionX = 0;
+                obj.style.backgroundPositionY = -190 * 3 + "px";
+            }
+            //中
+            if (x < 35 && x > -35 && y < 35 && y > -35) {
+                obj.style.backgroundPositionX = 0;
+                obj.style.backgroundPositionY = -190 * 12 + "px";
+            }
+        };
+    };
+    yaotou(demo);
+
+</script>
+</body>
+</html>

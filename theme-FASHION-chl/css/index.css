@@ -1,0 +1,430 @@
+@charset "UTF-8";
+
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+select, input, button {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+img {
+    border: 0;
+    vertical-align: middle; /*行内块元素默认为baseline*/
+}
+
+table {
+    border-collapse: collapse;
+}
+
+body {
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53";
+    color: #666;
+    background: #fff;
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+a {
+    color: #1c1c1c;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C81623;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+.col-red {
+    color: #C81623 !important;
+}
+
+.w {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.al {
+    text-align: left;
+}
+
+.ac {
+    text-align: center;
+}
+
+.ar {
+    text-align: right;
+}
+
+.hide {
+    display: none;
+}
+
+/*Logo start*/
+.nav-wrapper h1 {
+    text-align: center;
+    height: 92px;
+    font: 700 32px/92px "Titillium Web";
+    color: rgb(255, 255, 255);
+    /*font-family: "Titillium Web";*/
+    background-color: #000;
+    border-bottom: 1px solid #666666;
+}
+
+/*Logo end*/
+/*导航栏start*/
+.ul-nav {
+    background-color: #000;
+    height: 58px;
+}
+
+.w {
+    text-align: center;
+}
+
+.ul-nav .w a {
+    padding: 20px 15px;
+    display: inline-block;
+    line-height: 18px;
+    color: #FFF;
+}
+
+/*导航栏end*/
+
+/*轮播图start */
+.banner {
+    padding: 44px;
+}
+
+.banner .wDiv {
+    overflow: hidden;
+    /*width: 1100px;*/
+    /*margin: 0 auto;*/
+    height: 425px;
+    position: relative;
+}
+
+.slider {
+    width: 3300px;
+    height: 425px;
+    /*background-color: green;*/
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.simvoly-slide {
+    width: 1100px;
+    height: 425px;
+    background: url(../images/banner1.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.slide1 {
+    background: url(../images/banner1.jpg) center center no-repeat;
+}
+
+.slide2 {
+    background: url(../images/banner2.jpg) center center no-repeat;
+}
+
+/*小箭头*/
+/*.simvoly-nav-arrow{*/
+/*width: 54px;*/
+/*height: 54px;*/
+/*font: 700 19px/54px FontAwesome;*/
+/*border: 1px solid #999;*/
+/*color: rgba(150,150,150,0.5);*/
+/*border-radius: 50%;*/
+/*position: absolute;*/
+/*cursor: pointer;*/
+/*}*/
+/*.simvoly-leftarrow{*/
+/*top: 50%;*/
+/*margin-top: -27px;*/
+/*left: -70px;*/
+/*}*/
+/*.simvoly-rightarrow{*/
+/*top: 50%;*/
+/*margin-top: -27px;*/
+/*right: -70px;*/
+/*}*/
+/*轮播图end*/
+
+/*新产品部分start*/
+.grid-column h3{
+    font: 700 24px/92px 'Open Sans';
+}
+.grid-content span{
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    background-color: #946b94;
+
+}
+.pro-item{
+    width: 320px;
+    height: 240px;
+    position: relative;
+    /*background-color: green;*/
+}
+.pro-item2{
+    margin: 0 70px;
+}
+.price{
+    width: 100px;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    /*top: 50%;*/
+    bottom: 0;
+    z-index: 2;
+    /*bottom: 90px;*/
+    /*text-align: center;*/
+}
+.price span,.price h3{
+    color: #FFFFFF;
+}
+.price span{
+    display: inline-block;
+    width: 100px;
+}
+.newproShade{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+}
+/*新产品部分end*/
+
+/*gallery部分start*/
+.gallery-header {
+    height: 130px;
+    background-color: #fff;
+    background-color: #f5f5f5;
+}
+
+.gallery-header span {
+    font-size: 36px;
+    color: rgb(62, 62, 62);
+    font-family: "Titillium Web";
+    line-height: 130px;
+    font-weight: 700;
+}
+
+.gallery-kinds {
+    height: 58px;
+    /*background-color: pink;*/
+    text-align: center;
+}
+
+.gallery-kinds a {
+    font: 400 14px/58px "Titillium Web";
+    padding: 20px;
+}
+
+/*图片*/
+.pic {
+    margin-right: 10px;
+    float: left;
+    width: 540px;
+    height: 410px;
+    /*background-color: blue;*/
+    /*padding-top: 75%;*/
+    margin-top: 10px;
+    background-size: cover;
+    position: relative;
+}
+
+.pic .zhezhao {
+    width: 100%;
+    height: 100%;
+    /*opacity: 0.5;*/
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.pic span {
+    background-color: #946b94;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 16px;
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -30px;
+    margin-left: -30px;
+    display: none;
+}
+
+.pic1 {
+    background: url(../images/picture-1.jpg) center center no-repeat;
+}
+
+.pic2 {
+    background: url(../images/picture-2.jpg) center center no-repeat;
+}
+
+.pic3 {
+    background: url(../images/picture-3.jpg) center center no-repeat;
+}
+
+.pic4 {
+    background: url(../images/picture-4.jpg) center center no-repeat;
+}
+
+.pic5 {
+    background: url(../images/picture-5.jpg) center center no-repeat;
+}
+
+.pic6 {
+    background: url(../images/picture-6.jpg) center center no-repeat;
+}
+
+.pic7 {
+    background: url(../images/picture-7.jpg) center center no-repeat;
+}
+
+.pic8 {
+    background: url(../images/picture-8.jpg) center center no-repeat;
+}
+
+/*gallery部分end*/
+
+/*大轮播图部分start*/
+.bigSlider {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);;
+}
+
+.bigSlider-content {
+    position: fixed;
+    top: 0;
+    left: 5%;
+    width: 90%;
+    height: 100%;
+    background-color: pink;
+}
+
+.bigSlider-pic {
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: green;
+}
+.bigSlider-leftarrow,.bigSlider-rightarrow{
+    position: fixed;
+    top: 50%;
+    margin-top: -25px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border: 2px solid rgba(255, 255, 255, .7);
+    font-size: 25px;
+    color: #FFF;
+    cursor: pointer;
+    text-align: center;
+}
+.close {
+    border: 2px solid rgba(255,255,255,.7);
+    position: fixed;
+    top: 1.5%;
+    right: 1.5%;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    font: inherit;
+    line-height: 35px;
+    text-align: center;
+    color: rgba(255,255,255,.7);
+}
+.bigSlider-leftarrow {
+    left: 1.5%;
+}
+
+.bigSlider-rightarrow {
+    right: 1.5%;
+}
+
+/*大轮播图部分end*/
+
+/*小火箭start*/
+.rocket {
+    position: fixed;
+    right: 50px;
+    bottom: 100px;
+    display: none;
+    cursor: pointer;
+}
+/*小火箭end*/

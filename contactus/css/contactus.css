@@ -1,0 +1,64 @@
+
+.main {
+    margin-bottom: 50px;
+}
+
+.m-header {
+    height: 513px;
+    width: 100%;
+    background: url("../images/contactus-banner.jpg") center center no-repeat;
+    background-size: cover; /*°´±ÈÀý²Ã¼ô*/
+    position: relative;
+}
+
+.m-header .m-bg {
+    height: 70px;
+    background-color: #000000;
+    opacity: 0.5;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#contact-list {
+    position: absolute;
+    left: 50%;
+    margin-left: -287px;
+    bottom: 0;
+}
+
+#contact-list li {
+    float: left;
+}
+
+#contact-list a:hover {
+    background-color: #4eb3ea;
+    color: white;
+}
+
+#contact-list li a {
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    padding: 27px 37px;
+    opacity: 1;
+}
+
+#yaotou {
+    width: 1000px;
+    margin: 50px auto;
+}
+
+#yaotou div {
+    width: 190px;
+    height: 190px;
+    background: url('../images/yaotou/yaotou1(3).jpg') 0 -2280PX no-repeat;
+    float: left;
+    padding: 0 10px 10px 0;
+    overflow: hidden;
+}
+
+#div-collection {
+    margin: 0 auto;
+
+}
